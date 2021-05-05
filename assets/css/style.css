@@ -1,0 +1,163 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap');
+/* geral */
+*, ::after, ::before {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h4, p, li, span, strong{
+    color: #222218;
+}
+/* header */
+header{
+    margin-bottom: 67px;
+}
+header .imgs{
+    padding: 59px 0;
+}
+header .vitta{
+    height: 44px;
+    margin: auto 49px auto auto;
+}
+header .prest{
+    height: 57px;
+}
+/* seção com background gradient */
+.gbg h1{
+    font-size: 44px;
+    font-weight: bold;
+    margin: 40px 0 15px;
+}
+.gbg h2.left{
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 0 0 35px;
+}
+.gbg h2.left strong{
+    font-weight: bold;
+}
+.gbg img.pin{
+    height: 67px;
+    margin-right: 15px;
+}
+.gbg p.inline{
+    display: inline;
+    margin: auto 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+#centersection{
+    height: 320px;
+    transform: scale(1.3) translateY(-20px);
+}
+#nomemoradora{
+    position: absolute;
+    bottom: 20px;
+    right: -60px;
+    width: 120px;
+    font-size: 12px;
+}
+.gbg {
+    background-image: linear-gradient(220deg, #99c33b, #c4d730);
+}
+.gbg .formhead{
+    margin: 30px 0 5px;
+}
+.gbg img.right{
+    width: 37px;
+    height: 68px;
+    margin-right: 16px;
+}
+.gbg h2.right{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: auto 0;
+}
+form{
+    margin-left: 50px;
+}
+form input{
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 2px white;
+    width: 100%;
+    margin: 5px 5px;
+    padding: 5px 15px;
+}
+form input::placeholder{
+    color: white;
+}
+form input[type="submit"]{
+    color: black; /*#222218;*/
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+/* seção prova social */
+.prova{
+    padding: 90px 0 80px;
+}
+.prova .baloon img{
+    height: 49px;
+    margin-right: 10px;
+}
+.prova .baloon p{
+    margin: auto 0;
+}
+/* carrossel */
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+.carrosselsection{
+    padding: 60px 0;
+}
+#carrossel .imgside img{
+    width: 70%;
+    margin: auto;
+}
+#carrossel .txtside{
+    margin: 40px 0;
+}
+#carrossel .txtside .txt p{
+    font-size: 18px;
+    line-height: 28px;
+}
+#carrossel .txtside .nome{
+    margin-top: 20px;
+    width: 285px;
+}
+#carrossel .txtside .nome p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 200;
+    font-style: italic;
+}
+#carrossel .txtside img{
+    width: 50px;
+}
+#carrossel .txtside img.aspinit{
+    position: absolute;
+    left: -45px;
+    top: -15px;
+}
+#carrossel .txtside img.aspend{
+    position: absolute;
+    margin: 6px ​0 0 8px;
+}
+/* footer */
+footer{
+    padding: 20px 0 50px;
+}
+footer .vitta{
+    height: 44px;
+    margin: auto 25px auto auto;
+}
+footer .prest{
+    height: 57px;
+    margin: 0 auto 0 0;
+}

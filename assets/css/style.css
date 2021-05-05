@@ -78,7 +78,12 @@ header .prest{
 form{
     margin-left: 50px;
 }
+form label{
+    color: white;
+    font-size: 10px;
+}
 form input{
+    font-size: 10px;
     color: white;
     background-color: transparent;
     border-radius: 20px;
@@ -89,6 +94,9 @@ form input{
 }
 form input::placeholder{
     color: white;
+}
+form input[type="checkbox"]{
+    width: unset;
 }
 form input[type="submit"]{
     color: black; /*#222218;*/

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vittace Sabara</title>
     <meta name="description" content="Novo Vittace Prestes, a felicidade no coração de Sabara">
+    <link rel="shortcut icon" href="https://www.prestes.com/wp-content/themes/dna/img/icon.png" />
 </head>
 <body>
     <header class="container">
@@ -36,7 +37,9 @@
                         <img class="right" src="./assets/img/cell-vitace.png" alt="celular vittace">
                         <h2 class="right">Cadastre-se <br/>e saiba mais!</h2>
                     </div>
-                    <form action="#" method="post">
+                    <form action="https://prestes.com/wp-json/dna_theme/v1/rd-endpoint" method="post">
+                        <input type="hidden" name="urlredirect" value="https://prestes.com/">
+                        <input type="hidden" name="indentifier" value="lp-vittace-sabara">
                         <input type="text" name="name" placeholder="NOME" required>
                         <input type="tel" name="mobile_phone" placeholder="CELULAR" required>
                         <input type="email" name="email" placeholder="EMAIL" required>

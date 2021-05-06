@@ -15,6 +15,7 @@
      */
     function load(evt) {
         startYT();
+        getTrafficData();
     }
     function startYT(){
         // evento de clique dos videos
@@ -32,6 +33,43 @@
         ytclose.addEventListener('click', function(){
             querySelector('#ytmodal').classList.remove('active');
         })
+    }
+    function getTrafficData(){
+        document.getElementById('traffic_source').value = getUriParam('utm_source') ? getUriParam('utm_source') : getCookie('__trf.src');
+        document.getElementById('traffic_medium').value = getUriParam('utm_medium');
+        document.getElementById('traffic_campaign').value = getUriParam('utm_campaign');
+        document.getElementById('traffic_value').value = getUriParam('utm_term');
+    }
+    /** https://www.w3schools.com/js/js_cookies.asp */
+    function getCookie(cname) {
+        let name = `${cname}=`;
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === " ") {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+        }
+        return "";
+    }
+    /**
+    * Pega parametros passados pela uri
+    * @param {String} param - parâmetro que se quer pegar
+    * @author Vinicius de Santana
+    */
+    function getUriParam(param) {
+        var params = window.location.search.substr(1).split('&');
+        for (var i = 0; i < params.length; i++) {
+            var par = params[i].split('=');
+            if (par[0] == param) {
+                return decodeURIComponent(par[1]);
+            }
+        }
+        return '';
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));
 

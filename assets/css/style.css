@@ -121,7 +121,7 @@ header .prest{
         position: absolute;
         bottom: 20px;
         right: 20px;
-        width: 120px;
+        width: 140px;
         margin: 0;
         text-align: left;
         font-size: 12px;
@@ -189,6 +189,9 @@ form input[type="submit"]{
         padding: 90px 0 80px;
     }
 }
+.prova .baloon{
+    margin-bottom: 20px;
+}
 .prova .baloon img{
     height: 49px;
     margin-right: 10px;
@@ -204,37 +207,38 @@ form input[type="submit"]{
 .carrosselsection{
     padding: 60px 0;
 }
-#carrossel .imgside img{
+#carrosselsocial .imgside img{
     width: 70%;
     margin: auto;
 }
-#carrossel .txtside{
+#carrosselsocial .txtside{
     margin: 40px 0;
 }
-#carrossel .txtside .txt p{
+#carrosselsocial .txtside .txt p{
     font-size: 18px;
     line-height: 28px;
 }
-#carrossel .txtside .nome{
+#carrosselsocial .txtside .nome{
     margin-top: 20px;
-    width: 285px;
+    margin-right: 50px;
 }
-#carrossel .txtside .nome p{
+#carrosselsocial .txtside .nome p{
     font-size: 20px;
     line-height: 24px;
     font-weight: 200;
     font-style: italic;
 }
-#carrossel .txtside img{
+#carrosselsocial .txtside img{
     width: 50px;
 }
-#carrossel .txtside img.aspinit{
+#carrosselsocial .txtside img.aspinit{
     position: absolute;
     left: -45px;
     top: -15px;
 }
-#carrossel .txtside img.aspend{
+#carrosselsocial .txtside img.aspend{
     position: absolute;
+    display: inline;
     margin: 6px ​0 0 8px;
 }
 /* footer */
@@ -260,4 +264,55 @@ footer .prest{
         height: 57px;
         margin: 0 auto 0 0;
     }
+}
+/* carrossel */
+
+.owl-carousel .owl-dots{
+    margin-top: 35px;
+    display: flex;
+}
+.owl-carousel .owl-dot{
+    background-color: #b1b1b1!important;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+}
+.owl-carousel .owl-dot.owl-dot.active{
+    background-color: #8bb633!important;
+}
+.owl-carousel .owl-dot:first-child{
+    margin-left: auto;
+}
+.owl-carousel .owl-dot:last-child{
+    margin-right: auto;
+}
+
+.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 10%;
+    width: 30px;
+    color: white!important;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 100px!important;;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0!important;
+    margin-left: -50px;
+}
+.owl-carousel .owl-nav button.owl-next {
+    right: 0!important;
+    margin-right: -50px;
+}
+@media (min-width: 1300px) {
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -100px;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        margin-right: -100px;
+    }
+}
+.owl-carousel .owl-nav button:focus {
+    outline: none;
 }

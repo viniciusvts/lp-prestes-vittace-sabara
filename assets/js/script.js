@@ -1,0 +1,43 @@
+$(document).ready(function(){
+    $("#carrosselvideos").owlCarousel({
+        loop:true,
+        nav:false,
+        margin:15,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            700:{
+                items:3,
+            },
+            1000:{
+                items:6,
+                loop:false,
+            },
+            1900:{
+                items:7,
+                loop:false,
+            }
+        }
+    });
+    $("#carrosselsocial").owlCarousel({
+        items:1,
+        nav:true,
+        loop:true,
+        navText:['<img src="./assets/img/leftarrow.png" />', '<img src="./assets/img/rightarrow.png" />'],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            700:{
+                nav:true,
+            },
+            1000:{
+                loop:false,
+            }
+        }
+    });
+});

@@ -58,7 +58,7 @@ header .prest{
     }
 }
 .gbg.typ h1{
-    margin: 100px 0;
+    margin: 50px 0;
     text-align: center;
 }
 .gbg h2.left{
@@ -209,6 +209,15 @@ form input[type="submit"]{
 }
 .prova .baloon p{
     margin: auto 0;
+}
+.prova .baloon.typ{
+    margin-bottom: 50px;
+}
+.prova .baloon.typ img{
+    margin-left: auto;
+}
+.prova .baloon.typ p{
+    margin-right: auto;
 }
 /* carrossel */
 .mx-auto{
@@ -387,4 +396,41 @@ a.btn{
         padding: 10px 30px;
         font-size: 22px;
     }
+}
+/* seção outras lps */
+.outraslps h2{
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+.outraslps .list{
+    margin: 0 auto;
+}
+.outraslps .img{
+    min-height: 100px;
+}
+.outraslps img{
+    width: 100%;
+}
+.outraslps .text{
+    min-height: 160px;
+}
+.outraslps h3{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.outraslps p{
+    text-align: center;
+    margin: 0 0 40px;
+}
+.outraslps a{
+    margin: 0 auto 40px;
+}
+.outraslps .btn2{
+    background-color: #222218;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }

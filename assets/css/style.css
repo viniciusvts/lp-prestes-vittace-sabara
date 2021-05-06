@@ -13,6 +13,9 @@ h1, h2, h4, p, li, span, strong{
     header{
         margin-bottom: 67px;
     }
+    header.typ{
+        margin-bottom: 0;
+    }
 }
 header .imgs{
     padding: 20px 0;
@@ -53,6 +56,10 @@ header .prest{
     .gbg h1{
         text-align: left;
     }
+}
+.gbg.typ h1{
+    margin: 100px 0;
+    text-align: center;
 }
 .gbg h2.left{
     font-size: 34px;
@@ -351,4 +358,33 @@ footer .prest{
 }
 iframe#yt{
     max-width: 100%!important;
+}
+/* btn typ */
+.btns .btn{
+    margin-right: 10px;
+}
+@media (min-width: 1300px) {
+    .btns .btn{
+        margin-right: 20px;
+    }
+}
+.btns .btn:first-child{
+    margin-left: auto;
+}
+.btns .btn:last-child{
+    margin-right: auto;
+}
+a.btn{
+    background-image: linear-gradient(220deg, #99c33b, #c4d730);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #222218;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (min-width: 1300px) {
+    a.btn{
+        padding: 10px 30px;
+        font-size: 22px;
+    }
 }

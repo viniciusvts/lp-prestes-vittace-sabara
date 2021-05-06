@@ -337,10 +337,18 @@ footer .prest{
     margin: auto;
 }
 #ytclose{
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 20px;
     cursor: pointer;
+}
+@media (min-width: 1300px) {
+    #ytclose{
+        right: 50px;
+    }
+}
+iframe#yt{
+    max-width: 100%!important;
 }

@@ -111,9 +111,6 @@ $(document).ready(function(){
             700:{
                 nav:true,
             },
-            1000:{
-                loop:false,
-            }
         }
     });
 });

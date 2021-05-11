@@ -252,14 +252,23 @@ form input[type="submit"]{
     width: 50px;
 }
 #carrosselsocial .txtside img.aspinit{
-    position: absolute;
-    left: -45px;
-    top: -15px;
+    display: none;
 }
 #carrosselsocial .txtside img.aspend{
-    position: absolute;
-    display: inline;
-    margin: 6px ​0 0 8px;
+    display: none;
+}
+@media (min-width: 1200px) {
+    #carrosselsocial .txtside img.aspinit{
+        display: block;
+        position: absolute;
+        left: -45px;
+        top: -15px;
+    }
+    #carrosselsocial .txtside img.aspend{
+        position: absolute;
+        display: inline;
+        margin: 6px ​0 0 8px;
+    }
 }
 /* footer */
 footer{

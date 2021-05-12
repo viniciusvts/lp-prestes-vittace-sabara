@@ -210,15 +210,6 @@ form input[type="submit"]{
 .prova .baloon p{
     margin: auto 0;
 }
-.prova .baloon.typ{
-    margin-bottom: 50px;
-}
-.prova .baloon.typ img{
-    margin-left: auto;
-}
-.prova .baloon.typ p{
-    margin-right: auto;
-}
 /* carrossel */
 .mx-auto{
     margin-right: auto;
@@ -377,42 +368,10 @@ footer .prest{
 iframe#yt{
     max-width: 100%!important;
 }
-/* btn typ */
-.btns .btn{
-    margin-bottom: 20px;
-}
-@media (min-width: 700px) {
-    .btns .btn{
-        margin-right: 10px;
-    }
-}
-@media (min-width: 1300px) {
-    .btns .btn{
-        margin-right: 20px;
-    }
-}
-.btns .btn:first-child{
-    margin-left: auto;
-}
-.btns .btn:last-child{
-    margin-right: auto;
-}
-a.btn{
-    background-image: linear-gradient(220deg, #99c33b, #c4d730);
-    display: block;
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: #222218;
-    text-decoration: none;
-    font-weight: bold;
-}
-@media (min-width: 1300px) {
-    a.btn{
-        padding: 10px 30px;
-        font-size: 22px;
-    }
-}
 /* seção outras lps */
+.outraslps{
+    padding: 90px 0 80px;
+}
 .outraslps h2{
     font-size: 28px;
     text-align: center;

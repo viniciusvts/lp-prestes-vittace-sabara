@@ -87,6 +87,7 @@ $(document).ready(function(){
     $("#carrosselvideos").owlCarousel({
         loop:true,
         nav:false,
+        center: true,
         margin:15,
         responsiveClass:true,
         responsive:{
@@ -98,11 +99,9 @@ $(document).ready(function(){
             },
             1000:{
                 items:6,
-                loop:false,
             },
             1900:{
                 items:7,
-                loop:false,
             }
         }
     });

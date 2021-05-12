@@ -377,6 +377,11 @@ iframe#yt{
     text-align: center;
     margin: 0 0 40px;
 }
+@media (min-width: 1200px) {
+    .outraslps h2{
+        margin: 0 0 80px;
+    }
+}
 .outraslps .list{
     margin: 0 auto;
 }

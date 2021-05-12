@@ -30,9 +30,18 @@
         // evento de clique do botão fechar
         
         var ytclose = querySelector('#ytclose');
+        var ytmodal = querySelector('#ytmodal');
         ytclose.addEventListener('click', function(){
-            querySelector('#ytmodal').classList.remove('active');
-        })
+            ytmodal.classList.remove('active');
+        });
+
+        // evento de clique para fechar ao clicar fora
+        ytmodal.addEventListener('click', function(evt){
+            // apenas se clicar no espaço vazio, não executa se vier dos child elements do dom
+            if(evt.target == this){
+                ytmodal.classList.remove('active');
+            }
+        });
     }
     function getTrafficData(){
         document.getElementById('traffic_source').value = getUriParam('utm_source') ? getUriParam('utm_source') : getCookie('__trf.src');

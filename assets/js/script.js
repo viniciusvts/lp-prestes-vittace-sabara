@@ -101,6 +101,9 @@ $(document).ready(function(){
         items:1,
         nav:true,
         loop:true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause:true,
         navText:['<img src="./assets/img/leftarrow.png" />', '<img src="./assets/img/rightarrow.png" />'],
         responsiveClass:true,
         responsive:{
